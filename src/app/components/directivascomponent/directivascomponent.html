@@ -1,0 +1,17 @@
+<h1>Directivas</h1>
+<h2 style="color: blue;">
+    Tienes {{deportes.length}} deportes
+</h2>
+
+@if (deportes.length > 5) {
+<p>Tus más de 5 deportes</p>}
+@else {
+<p>Tienes menos de 5 deportes</p>}
+
+@for (e of deportes; track e) {
+<h2>{{e}}</h2>
+}
+
+@for (e of deportes; track e) {
+<h2>{{e}}</h2>
+}
