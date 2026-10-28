@@ -1,0 +1,14 @@
+<h1>Sumar números</h1>
+
+<form #formulario="ngForm">
+  <div>
+    <label>Ingresa un numero</label>
+    <input type="text" name="inputnum1" #inputnum1 />
+  </div>
+  <div>
+    <label>Ingresa otra número</label>
+    <input type="text" name="inputnum2" #inputnum2 />
+  </div>
+  <button (click)="handleSum()">Calcular</button>
+</form>
+<h2>{{ mensaje }}</h2>

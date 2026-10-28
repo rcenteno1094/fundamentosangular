@@ -11,4 +11,8 @@ export class NumerosEstilosComponent {
   constructor() {
     this.num = [0, 1, 2, 3, 4, 5, 6];
   }
+  generateRnd(): void {
+    let rnd = Math.floor((Math.random() * 100 + 1));
+    this.num.push(rnd);
+  }
 }
