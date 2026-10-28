@@ -22,7 +22,6 @@ export class SumarNumerosComponent {
   handleSum(): void {
     let num1 = Number(this.inputnum1.nativeElement.value);
     let num2 = Number(this.inputnum2.nativeElement.value);
-
     this.mensaje = 'El resultado es ' + (num1 + num2);
   }
 }

@@ -1,0 +1,12 @@
+<h2>Array Nombres</h2>
+<form #form="ngForm">
+  <label>Ingresa un nombre</label>
+  <input type="text" name="inputname" #inputname />
+  <button (click)="handleNames()">Añade nombre</button>
+</form>
+<h3>Tienes {{ arr.length }} nombres</h3>
+<ul>
+  @for (e of arr; track e) {
+    <li>{{ e }}</li>
+  }
+</ul>
